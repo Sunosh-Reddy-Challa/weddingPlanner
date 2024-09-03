@@ -1,0 +1,32 @@
+/* Add this to your CSS or SCSS file */
+.sidebar {
+    background-color: #f8f9fa;
+  }
+  a {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--primary-color);
+    padding-block: 1.6rem;
+    position: relative;
+  }
+  a:hover {
+    color: var(--main-color);
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    height: 0.3rem;
+    border-block: 1px solid var(--main-color);
+    bottom: 0.5rem;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease;
+  }
+  a:is(:hover, :focus)::before {
+    transform: scaleX(1);
+  }
+  a{
+    text-decoration: none;
+   }

@@ -1,0 +1,33 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content {
+  text-align: center;
+}
+
+.home .content h2,
+.home .content h3,
+.home .content p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #000000;
+  padding-bottom: 1.5rem;
+}
+
+.home .content h2 {
+  font-size: 4rem;
+  padding-bottom: 2.5rem;
+}
+
+.home .content h3 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}

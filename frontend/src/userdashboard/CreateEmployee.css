@@ -1,0 +1,37 @@
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 2.8rem;
+    border-radius: 5rem;
+    border-top-left-radius: 0;
+    border: 0.2rem solid var(--main-color);
+    cursor: pointer;
+    color: var(--main-color);
+    font-size: 1.7rem;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    clip-path: circle(0% at 0% 5%);
+  }
+  
+  .btn:hover::before {
+     clip-path: circle(100%);
+  }
+  
+  .btn:hover {
+    color: var(--white);
+  }

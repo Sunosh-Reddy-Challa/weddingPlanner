@@ -1,0 +1,101 @@
+/* Add this to your existing CSS */
+
+.about .additional-content {
+  padding: 3rem 0;
+}
+
+.about .additional-content p {
+  font-size: 1.8rem;
+  color: var(--light-black);
+  line-height: 2.5;
+  margin-bottom: 1.5rem;
+}
+
+.about .additional-content h4 {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.about .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.about .team-member {
+  text-align: center;
+  flex: 0 0 calc(20% - 1rem);
+  padding: 1.5rem;
+  background-color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about .team-member:hover {
+  transform: scale(1.05);
+}
+
+.about .team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.about .btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: var(--white);
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about .btn:hover {
+  background-color: var(--main-color-dark);
+}
+
+/* Add more styling as needed */
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .about .row .image {
+    flex: 1 1 40rem;
+  }
+  
+  .about .row .image img {
+    width: 80%;
+  }
+  
+  .about .row .content {
+    flex: 1 1 40rem;
+  }
+  
+  .about .row .content h3 {
+    font-size: 3.5rem;
+    color: var(--main-color);
+  }
+  
+  .about .row .content p {
+    font-size: 1.6rem;
+    color: var(--light-black);
+    padding: 2rem 0;
+    line-height: 2;
+  }
+  p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    color:#000000;
+    padding-bottom: 3.5rem;
+  }

@@ -1,0 +1,51 @@
+
+.team .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:1.5rem;
+}
+
+.team .box-container .box{
+   border-radius: .5rem;
+   background: var(--white);
+   padding:2rem;
+   text-align: center;
+   box-shadow: var(--box-shadow);
+}
+
+.team .box-container .box img{
+   border-radius: 50%;
+   height: 15rem;
+   width: 15rem;
+   object-fit: cover;
+   margin-bottom: 1rem;
+}
+
+.team .box-container .box h3{
+   font-size: 2rem;
+   color:var(--primary-color);
+}
+
+.team .box-container .box p{
+   font-size: 1.5rem;
+   color:var(--main-color);
+}
+
+.team .box-container .box .share{
+   margin-top: .5rem;
+}
+
+.team .box-container .box .share a{
+   height: 4rem;
+   width: 4rem;
+   line-height: 4rem;
+   font-size: 1.7rem;
+   background: var(--primary-color);
+   border-radius: .5rem;
+   color:var(--white);
+   margin: .5rem 0;
+}
+
+.team .box-container .box .share a:hover{
+   background: var(--main-color);
+}

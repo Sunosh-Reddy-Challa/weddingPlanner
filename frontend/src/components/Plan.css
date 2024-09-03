@@ -1,0 +1,104 @@
+.plan .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .plan .row .image {
+    flex: 1 1 39%;
+  }
+  
+  .plan .row .image img {
+    width: 50%;
+    height: 50%; /* Maintain aspect ratio */
+  }
+  
+  .plan .row .content {
+    flex: 1 1 50%; /* Adjusted width for content */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+  
+  .plan .row .content.show {
+    display: block;
+  }
+  
+  .plan .row .content h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--light-black);
+  }
+  
+  .plan .row .content p {
+    text-align: right;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    padding: 2rem 0;
+    line-height: 2;
+  }
+  
+  
+  /* Add the following styles for the box
+  .plan {
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    margin-bottom: 75px;
+    overflow: hidden;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+  
+  #goa{
+      border: 1px solid #ddd;
+    border-radius: 100px;
+    margin-bottom: 75px;
+    margin-top: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .plan .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .plan .row .image {
+    flex: 1.2 1 10%;
+  }
+  
+  .plan .row .image img {
+    width: 75%;
+    height: auto;
+  }
+  
+  .plan .row .content {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+  
+  .plan .row .content.show {
+    text-align: right;
+    display: block;
+  }
+  
+  .plan .row .content h3 {
+    font-size: 2.7rem;
+    color: #333;
+  }
+  
+  .plan .row .content p {
+    font-size: 1.6rem;
+    color: #666;
+    padding: 2rem 0;
+    line-height: 20;
+  }
+  
+  /* ... Other existing styles ... */
+  

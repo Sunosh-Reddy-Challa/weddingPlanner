@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow); 
+  }
+  
+  .header .logo {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--primary-color);
+  }
+  
+  .header .logo i {
+    color: var(--main-color);
+    padding-right: 0.5rem;
+  }
+  
+  .header .navbar a {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--primary-color);
+    padding-block: 1.6rem;
+    position: relative;
+  }
+  
+  .header .navbar a:hover {
+    color: var(--main-color);
+  }
+  
+  .header .navbar a::before {
+    content: "";
+    position: absolute;
+    height: 0.3rem;
+    border-block: 1px solid var(--main-color);
+    bottom: 0.5rem;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s ease;
+  }
+  
+  .header .navbar a:is(:hover, :focus)::before {
+    transform: scaleX(1);
+  }
+  
+  .header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    background: var(--main-color);
+    text-align: center;
+  }
+  
+  .header .icons div:hover {
+    color: var(--main-color);
+    background: var(--primary-color);
+  }
+  a{
+     text-decoration: none;
+    }
+  
+    #menu{
+       display: none;
+    }
